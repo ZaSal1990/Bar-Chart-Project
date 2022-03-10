@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="index.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="bar-chart.js"></script>
+<script src="jquery.js"></script>
+</head>
+
+
+<body>
+
+<h1>Bar Chart Project</h1>
+<p>This program is to generate bar charts. The following are customizable features:</p>
+<div class ="barChartTitle">
+<h2 class = "title">Bar Chart title</h2>
+<p>Customize:</p>
+<label for="bar_chart_title">Project Title:
+<input placeholder="text" type="text" class="bar_chart_title" value="Bar Chart Title">
+</label>
+<label for="bar_text_color">Title Text Color:
+<input placeholder="Colour" class="bar_text_color" type="color" name="barColour" value="#ffffff">
+</label>
+<label for="bar_title_font_size">Title Font Size:
+<input placeholder="text" type="text" class="bar_title_font_size" value=""></label>
+<button class="button_title">Customize Now!</button>
+</div>
+
+<div>
+<h3>Create Empty graph</h3>
+
+    <label for="xAxisTitle">X-Axis Title:</label>
+    <input placeholder="text" type="text" class="xAxisTitle" value="X-Axis"></label>
+    <label for="yAxisTitle">Y-Axis Title:</label>
+    <input placeholder="text" type="text" class="yAxisTitle" value="Y-Axis"></label>
+    <label for="y-axisMax">Y-Axis Max:</label>
+    <input placeholder="number" type="number" class="y-axisMax" value="200" ></label>
+
+    
+    <button class="button_empty_graph">Create Graph!</button><br>
+    <div class = "chartLegendY">
+    <h3 class ="chartLegendY">Y-Axis</h3>
+    <p class="chartLegendY"> Max Value </p>
+    </div>
+    <div class = "chart"></div>
+    <div class = "chartLegendX">
+    <h3 class = "chartLegendX">X-Axis</h3>
+    </div>
+    <br>
+    <label for="barValue">Bar Value:</label>
+    <input placeholder="number" type="number" class="barValue" value=""></label>
+    <label for="barColor">Bar Color:</label>
+    <input placeholder="Colour" class="barColor" type="color" name="barColor" value="#fff8dc">
+    <button class="button_barInsert">Create Bar!</button>
+    <button class="button_clearAll">Clear All!</button><br>
+    </div>
+
+
+
+
+</body>
+</html>
